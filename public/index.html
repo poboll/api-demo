@@ -6,15 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>接口测试</title>
     <style>
+        body {
+            background-image: url('https://img.zcool.cn/community/012ca25543ec880000019ae94c5fcc.jpg@3000w_1l_2o_100sh.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            border: none;
+            margin: 50px 0;
+            padding: 0;
+        }
+
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
         textarea {
             width: 100%;
             min-height: 24ch;
             resize: vertical;
             overflow: auto;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            padding: 10px;
+            color: #333;
+            font-size: 16px;
         }
 
         input {
             width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            padding: 10px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0062cc;
+        }
+
+        #balance {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            padding: 10px;
+            color: #333;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        #prompt {
+            height: 100px;
+        }
+
+        #container {
+            height: 100px;
         }
     </style>
     <script src="./main.js"></script>
@@ -30,13 +99,13 @@
 </head>
 
 <body>
-    <fieldset>
+    <!--<fieldset>
         <legend>设置区</legend>
         <div>
             <label for="uuid">身份令牌：</label>
             <input id="uuid" />
         </div>
-    </fieldset>
+    </fieldset>-->
     <fieldset>
         <legend>输入区</legend>
         <div>
