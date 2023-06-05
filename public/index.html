@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>接口测试</title>
+    <style>
+        textarea {
+            width: 100%;
+            min-height: 24ch;
+            resize: vertical;
+            overflow: auto;
+        }
+
+        input {
+            width: 100%;
+        }
+    </style>
+    <script src="./main.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            const hm = document.createElement('script')
+            hm.src = 'https://hm.baidu.com/hm.js?962a59f65b3716cfcd76d1759bf777b4'
+            const s = document.getElementsByTagName('script')[0]
+            s.parentNode.insertBefore(hm, s)
+        })()
+    </script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>设置区</legend>
+        <div>
+            <label for="uuid">身份令牌：</label>
+            <input id="uuid" />
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>输入区</legend>
+        <div>
+            <button id="submit">提交</button>
+            <button id="stop">终止</button>
+            <button id="clean">清空</button>
+        </div>
+        <textarea id="prompt" placeholder="提问录入区域"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>输出区</legend>
+        <div>
+            <button id="copy">复制</button>
+            <button id="refresh">刷新</button>
+        </div>
+        <div>
+            <input id="balance" placeholder="余额显示区域" readonly />
+        </div>
+        <div>
+            <textarea id="container" placeholder="对话显示区域" readonly></textarea>
+        </div>
+    </fieldset>
+</body>
+
+</html>
